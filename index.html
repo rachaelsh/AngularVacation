@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="angularVacation">
   <head>
-    <meta charset="utf-8">
     <title>JavaScript DOM Manipulation Practice</title>
     <link rel="stylesheet" href="styles.css" >
     <script src="https://use.fontawesome.com/b4ccb25300.js"></script>
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
     <div class="container">
       <div class="headtext">
         <h1>Vacation Destinations of the World</h1>
@@ -20,6 +19,7 @@
         <a href="#">Deep Sea Fishing</a>
         <a href="#">Cave Tours</a>
       </div>
+      {{test}}
       <div class="linkbox">
         <i class="fa fa-arrow-left fa-3x"></i>
         <div class="box">
@@ -34,5 +34,10 @@
         <i class="fa fa-arrow-right fa-3x"></i>
       </div>
     </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+       <script src="app.js"></script>
+       <script src="mainCtrl.js"></script>
+       <script src="mainServ.js"></script>
+       <!-- <script src="menuDir.js"></script> -->
   </body>
 </html>
